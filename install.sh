@@ -9,8 +9,8 @@ fi
 
 ${sudo} apt-get update
 ${sudo} apt-get install -y build-essential curl git libfontconfig1 ruby ruby-dev tor
-${sudo} gem install bundler --path vendor/bundle
-bundle install
+${sudo} gem install bundler
+bundle install --path vendor/bundle
 
 ${sudo} cp torrc /etc/tor/torrc
 ${sudo} mkdir /etc/tor/cookie/
