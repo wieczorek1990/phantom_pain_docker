@@ -8,7 +8,7 @@ else
 fi
 
 ${sudo} apt-get update
-${sudo} apt-get install -y build-essential curl git ruby ruby-dev tor
+${sudo} apt-get install -y build-essential curl git libfontconfig1 ruby ruby-dev tor
 ${sudo} gem install bundler --path vendor/bundle
 bundle install
 
